@@ -4,7 +4,7 @@ from random import choice, randint
 import os.path
 from time import sleep
 
-bot = telebot.TeleBot('YOUR_TOKEN')
+bot = telebot.TeleBot('1869980719:AAGIzUkAODkq3YKDsqFUk6DVMKKsVlcNGVo')
 
 def sql_open(toggle=0):
 
@@ -391,7 +391,7 @@ def game(message, toggle = 0):
                     pass
                 else:
                     indx = [randint(0, len(GAME['answer']) - 1) for _ in range(8)]
-                    indx = [x for x in indx if GAME['answer'][x] != ' ']
+                    indx = [x for x in indx]
                 temp_answ = ['*' if x != ' ' else ' ' for x in GAME['answer']]  # *****
 
                 if temp_theme != 'Math':
