@@ -4,7 +4,7 @@ from random import choice, randint
 import os.path
 from time import sleep
 
-bot = telebot.TeleBot('1869980719:AAGIzUkAODkq3YKDsqFUk6DVMKKsVlcNGVo')
+bot = telebot.TeleBot('YOUR TOKEN')
 
 def sql_open(toggle=0):
 
